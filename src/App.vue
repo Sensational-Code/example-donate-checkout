@@ -41,15 +41,11 @@
 		
 	/* Grid layout */
 	.inner {
-		/*display: flex;
-		flex-wrap: wrap;*/
 		display: grid;
-	  grid-template-columns: 55% 45%;
-	  /*gap: 16px;*/
-	  /*padding: 10px;*/
-	  justify-content: center;
-	  align-content: center;
-	  max-width: 900px;
+		grid-template-columns: 55% 45%;
+		justify-content: center;
+		align-content: center;
+		max-width: 900px;
 
 	}
 

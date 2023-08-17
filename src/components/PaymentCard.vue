@@ -130,7 +130,7 @@
 		max-width: 500px;
 		border-radius: 20px;
 		overflow: hidden;
-		box-shadow: 15px 15px 42px 0px #EBEBEB;
+		box-shadow: var(--default-shadow);
 		padding: 24px;
 		/*margin: 15px;*/
 		margin: 8px;
@@ -156,12 +156,11 @@
 	}
 
 	.payment-card__input {
-		color: rgb(95, 112, 186);
+		color: var(--blue);
 		/*font-size: 32px;*/
     font-size: 2rem;
     line-height: 1.25;
     height: 72px;
-    /*padding: 19px;*/
     padding-left: 16px;
     font-weight: 700;
 		margin-bottom: 9px;

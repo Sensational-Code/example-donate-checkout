@@ -43,7 +43,7 @@
 		max-width: 500px;
 		border-radius: var(--border-radius);
 		overflow: hidden;
-		box-shadow: 15px 15px 42px 0px #EBEBEB;
+		box-shadow: var(--default-shadow);
 		margin: 8px;
 	}
 
@@ -71,7 +71,6 @@
 		margin-top: 17px;
 		margin-bottom: 10px;
 		line-height: 1.25;
-		/*color: var(--text-primary);*/
 	}
 
 	.card__inner p {
@@ -79,15 +78,12 @@
 		font-weight: 400;
 		/*font-size: 18px;*/
 		font-size: 1.1rem;
-		/*color: var(--text-primary);*/
 	}
 
 	.card__footer {
 		display: flex;
-		/*justify-content: flex-end;*/
 		justify-content: space-around;
 		margin-top: 90px;
-		/*margin-right: 8px;*/
 	}
 
 </style>
