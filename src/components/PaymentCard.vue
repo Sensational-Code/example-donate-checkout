@@ -1,6 +1,6 @@
 <template>
 
-	<!-- Payment box -->
+	<!-- Payment card -->
 	<div class="payment-card">
 
 		<!-- Header text -->
@@ -165,6 +165,7 @@
     padding-left: 16px;
     font-weight: 700;
 		margin-bottom: 9px;
+		width: 100%;
 	}
 
 	.payment-card__subtext {
