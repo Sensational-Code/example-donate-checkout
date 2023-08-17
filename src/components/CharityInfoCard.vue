@@ -8,7 +8,7 @@
 		<img class="card__image" src="@/assets/images/pattern.png" alt="card image">
 		
 		<!-- Card content -->
-		<div class=card__inner>
+		<div class="card__inner">
 			<img class="card__profile-image" src="@/assets/images/profile-pattern.png" alt="card image">
 			<h3>Doing Orphan Care Differently.</h3>
 			<p>Child Hope International is a 501c3 organization
@@ -32,7 +32,9 @@
 
 <script>
 
-	export default {}
+	export default {
+		
+	}
 
 </script>
 

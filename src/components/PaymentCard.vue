@@ -80,7 +80,6 @@
 <script>
 
 	export default {
-
 		data() {
 			return {
 				paymentType: 'once',
