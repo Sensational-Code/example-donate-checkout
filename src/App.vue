@@ -1,6 +1,5 @@
 
 <template>
-
 	<div class="inner">
 
 		<!-- Charity info card -->
@@ -46,7 +45,6 @@
 		justify-content: center;
 		align-content: center;
 		max-width: 900px;
-
 	}
 
 	@media (max-width: 900px) {

@@ -13,14 +13,16 @@
 		</div>
 
 		<!-- Currency input -->
-		<input v-model="inputAmount" type="number" @input="handleAmountInput" class="payment-card__input">
+		<input v-model="inputAmount" type="number" class="payment-card__input" @input="handleAmountInput">
 		<div class="payment-card__subtext">$250 gives 2 girls food for 1 year.</div>
 
 		<!-- Quick select payment amounts -->
 		<div class="payment-card__amounts">
 
 			<!-- This is a little ugly and would be easier with css grid, but this flex method
-						has the benefit of accomdating an odd number of amounts and keeping them centered -->
+					 has the benefit of accomdating an odd number of amounts and keeping them centered.
+					 If we know for sure that there are only an even number of buttons, then this can
+					 all be one clean loop rather than using math to split them into rows -->
 
 			<!-- First row of buttons -->
 			<div class="row">
@@ -45,17 +47,6 @@
 					{{ currencySymbol }}{{ amount }}
 				</button>
 			</div>
-
-			<!-- <div class="row">
-				<button class="button col">$10</button>
-				<button class="button col">$100</button>
-				<button class="button col">$200</button>
-			</div>
-			<div class="row">
-				<button class="button col">$500</button>
-				<button class="button col">$750</button>
-				<button class="button col">$1000</button>
-			</div> -->
 		</div>
 
 		<!-- Footer -->
@@ -73,8 +64,8 @@
 			<!-- Next step button -->
 			<button class="button button--primary w-100" @click="handleNext">Next</button>
 		</div>
-	</div>
 
+	</div>
 </template>
 
 <script>
