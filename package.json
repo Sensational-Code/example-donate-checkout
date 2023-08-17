@@ -2,6 +2,7 @@
   "name": "example-donate-checkout",
   "version": "0.0.0",
   "private": true,
+  "homepage": "http://Sensational-Code.github.io/example-donate-checkout",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
