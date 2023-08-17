@@ -41,9 +41,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding-left: 25px;
-		padding-right: 25px;
-		margin-top: 32px;
+		padding: 24px
 	}
 
 	.footer__section {

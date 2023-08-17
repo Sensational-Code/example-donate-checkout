@@ -13,7 +13,7 @@
 		</div>
 
 		<!-- Currency input -->
-		<input v-model="inputAmount" @input="handleAmountInput" class="payment-card__input">
+		<input v-model="inputAmount" type="number" @input="handleAmountInput" class="payment-card__input">
 		<div class="payment-card__subtext">$250 gives 2 girls food for 1 year.</div>
 
 		<!-- Quick select payment amounts -->
@@ -27,7 +27,7 @@
 				<button
 					v-for="amount in quickSelectAmounts.slice(0, Math.min(quickSelectAmounts.length/2))"
 					class="button col"
-					:class="{ 'button--primary': amount === inputAmount }"
+					:class="{ 'button--primary': amount == inputAmount }"
 					@click="handleQuickAmount(amount)"
 				>
 					{{ currencySymbol }}{{ amount }}
@@ -39,7 +39,7 @@
 				<button
 					v-for="amount in quickSelectAmounts.slice(Math.min(quickSelectAmounts.length/2), quickSelectAmounts.length)"
 					class="button col"
-					:class="{ 'button--primary': amount === inputAmount }"
+					:class="{ 'button--primary': amount == inputAmount }"
 					@click="handleQuickAmount(amount)"
 				>
 					{{ currencySymbol }}{{ amount }}
@@ -112,7 +112,7 @@
 			handleAmountInput(event) {},
 
 			handleQuickAmount(amount) {
-				this.inputAmount = amount;
+				this.inputAmount = `${amount}`;
 			},
 
 			handleNext() {
